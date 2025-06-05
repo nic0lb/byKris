@@ -108,7 +108,9 @@ main {
 /* Responsivo */
 @media (max-width: 600px) {
   .carrinho-container {
+    height: auto;
     max-height: 60vh;
+
   }
 }
 
