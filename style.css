@@ -44,19 +44,39 @@ main {
 
 /* Carrinho */
 .carrinho-container {
-  position: fixed;      /* fixa na tela */
-  bottom: 0;            /* fixa na parte inferior */
-  right: 20px;          /* distância da borda direita */
-  width: 90%;         /* largura fixa */
-  max-height: 35vh;     /* altura máxima para limitar o tamanho */
-  overflow-y: auto;     /* barra de rolagem se o conteúdo ultrapassar */
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 90%;
+  max-height: 60vh;
   background: white;
   padding: 1rem;
-  border-radius: 10px 10px 0 0; /* bordas arredondadas só no topo */
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.2); /* sombra para cima */
-  z-index: 1000;        /* sobrepor outros elementos */
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
 }
 
+#carrinho {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+#enviar {
+  flex-shrink: 0;
+  background-color: #25D366;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 
 #carrinho {
