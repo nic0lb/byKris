@@ -21,7 +21,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 50%; /* ou o valor da altura do carrinho + um pouco mais */
+  padding-bottom: 180px; /* reserva espaço aproximado para o carrinho */
 }
 
 .produto button {
@@ -46,7 +46,7 @@ main {
 .carrinho-container {
   position: fixed;
   bottom: 0;
-  right: 20px;
+  right: 5%;
   width: 90%;
   max-height: 60vh;
   background: white;
@@ -54,35 +54,16 @@ main {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
   z-index: 1000;
-
   display: flex;
   flex-direction: column;
 }
 
 #carrinho {
-  flex: 1;
+  max-height: 130px; /* rola a partir de ~2 produtos */
   overflow-y: auto;
-  margin-bottom: 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-#enviar {
-  flex-shrink: 0;
-  background-color: #25D366;
-  color: white;
-  padding: 1rem;
-  border: none;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-
-#carrinho {
-  list-style: none;
   padding: 0;
   margin-bottom: 1rem;
+  list-style: none;
 }
 
 #carrinho li {
@@ -111,6 +92,7 @@ main {
 }
 
 #enviar {
+  flex-shrink: 0;
   width: 100%;
   background-color: #25D366;
   color: white;
@@ -128,14 +110,10 @@ main {
 /* Responsivo */
 @media (max-width: 600px) {
   .carrinho-container {
-    height: auto;
+    width: 90%;
+    right: 5%;
     max-height: 60vh;
-
   }
-}
-
-main {
-  padding-bottom: 50%; /* Isso pode ocupar metade da tela à toa */
 }
 
 /* Abas */
@@ -161,9 +139,9 @@ main {
 }
 
 .categoria {
-  display: grid;                     /* ativa grid layout */
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
-  gap: 20px;                        /* espaço entre os produtos */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   padding: 10px;
   justify-content: center;
 }
@@ -173,7 +151,6 @@ main {
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  /* width não precisa quando usar grid, o grid define a largura */
 }
 
 .produto img {
