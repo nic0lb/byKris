@@ -21,7 +21,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 150%; /* reserva espaço aproximado para o carrinho */
+  padding-bottom: 50%; /* reserva espaço aproximado para o carrinho */
 }
 
 .produto button {
@@ -113,6 +113,7 @@ main {
     width: 90%;
     right: 5%;
     max-height: 60vh;
+    padding-bottom: 50%
   }
 }
 
