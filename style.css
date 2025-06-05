@@ -59,7 +59,7 @@ main {
 }
 
 #carrinho {
-  max-height: 130px; /* rola a partir de ~2 produtos */
+  max-height: 50%; /* rola a partir de ~2 produtos */
   overflow-y: auto;
   padding: 0;
   margin-bottom: 1rem;
