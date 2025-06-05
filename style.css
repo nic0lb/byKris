@@ -47,7 +47,7 @@ main {
   position: fixed;      /* fixa na tela */
   bottom: 0;            /* fixa na parte inferior */
   right: 20px;          /* distância da borda direita */
-  width: 5%;         /* largura fixa */
+  width: 90%;         /* largura fixa */
   max-height: 35vh;     /* altura máxima para limitar o tamanho */
   overflow-y: auto;     /* barra de rolagem se o conteúdo ultrapassar */
   background: white;
