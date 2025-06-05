@@ -106,12 +106,12 @@ main {
 }
 
 /* Responsivo */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .carrinho-container {
-    width: 90%;
-    right: 5%;
+    max-height: 60vh;
   }
 }
+
 
 /* Abas */
 .abas {
